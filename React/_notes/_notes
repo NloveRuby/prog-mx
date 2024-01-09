@@ -1,0 +1,37 @@
+npx create-react-app appName
+<!-- npx used od excution, npm for managment -->
+
+Start the development server by running the following command:
+
+    npm start
+
+    This will start the development server and open your React app in your default web browser. You can now start building your React app.
+
+
+If you want to use TypeScript with your React app, you can specify the --template typescript flag when running the create-react-app command, like this:
+
+npx create-react-app my-app --template typescript
+
+
+Componenet name shall start in capital
+Componenet shall have the same name is the function
+All html tags shall be in jsx fargment <> here <> 
+all app.js, index.js, app.css and index.css shall be retained
+
+      <!-- {/* all html tags shall be in single fragment */}
+      {/* HTML elements shall be inside render function */}
+      {/* all tags shall be closed by ending slash </> */}
+      {/* add the class using ClassName, instead of class used in HTML */}
+      {/* you can use div or any other html tags instead of the fragment */}
+      {/* you can use js above return function and use it in the return function using {} for code */} -->
+      
+flow:
+create component using rafc 
+the compnent will be named after the files namle
+import the component in the app.js like below.
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+the app.js is imported as an html tag(root) in the index.html
+
+
+      

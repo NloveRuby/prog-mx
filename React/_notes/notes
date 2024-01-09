@@ -1,0 +1,12 @@
+npx create-react-app appName
+
+Start the development server by running the following command:
+
+    npm start
+
+    This will start the development server and open your React app in your default web browser. You can now start building your React app.
+
+
+If you want to use TypeScript with your React app, you can specify the --template typescript flag when running the create-react-app command, like this:
+
+npx create-react-app my-app --template typescript

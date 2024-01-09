@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import dog from '../assets/dog.webp';
 
 export const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <div>
+      <img className="dog" src={dog} alt="Dog" />
+    </div>
+  );
+};
+    

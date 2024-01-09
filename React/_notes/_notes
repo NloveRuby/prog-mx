@@ -24,7 +24,7 @@ all app.js, index.js, app.css and index.css shall be retained
       {/* add the class using ClassName, instead of class used in HTML */}
       {/* you can use div or any other html tags instead of the fragment */}
       {/* you can use js above return function and use it in the return function using {} for code */} -->
-      
+      you can create css in component folder, using camel case, unlike component(Capital case) 
 flow:
 create component using rafc 
 the compnent will be named after the files namle

@@ -1,37 +1,159 @@
-npx create-react-app appName
-<!-- npx used od excution, npm for managment -->
+// npx create-react-app appName
+// <!-- npx used od excution, npm for managment -->
 
-Start the development server by running the following command:
+// Start the development server by running the following command:
 
-    npm start
+//     npm start
 
-    This will start the development server and open your React app in your default web browser. You can now start building your React app.
-
-
-If you want to use TypeScript with your React app, you can specify the --template typescript flag when running the create-react-app command, like this:
-
-npx create-react-app my-app --template typescript
+//     This will start the development server and open your React app in your default web browser. You can now start building your React app.
 
 
-Componenet name shall start in capital
-Componenet shall have the same name is the function
-All html tags shall be in jsx fargment <> here <> 
-all app.js, index.js, app.css and index.css shall be retained
+// If you want to use TypeScript with your React app, you can specify the --template typescript flag when running the create-react-app command, like this:
 
-      <!-- {/* all html tags shall be in single fragment */}
-      {/* HTML elements shall be inside render function */}
-      {/* all tags shall be closed by ending slash </> */}
-      {/* add the class using ClassName, instead of class used in HTML */}
-      {/* you can use div or any other html tags instead of the fragment */}
-      {/* you can use js above return function and use it in the return function using {} for code */} -->
-      you can create css in component folder, using camel case, unlike component(Capital case) 
-flow:
-create component using rafc 
-the compnent will be named after the files namle
-import the component in the app.js like below.
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-the app.js is imported as an html tag(root) in the index.html
+// npx create-react-app my-app --template typescript
 
 
-      
+// Componenet name shall start in capital
+// Componenet shall have the same name is the function
+// All html tags shall be in jsx fargment <> here <> 
+// all app.js, index.js, app.css and index.css shall be retained
+
+//       <!-- {/* all html tags shall be in single fragment */}
+//       {/* HTML elements shall be inside render function */}
+//       {/* all tags shall be closed by ending slash </> */}
+//       {/* add the class using ClassName, instead of class used in HTML */}
+//       {/* you can use div or any other html tags instead of the fragment */}
+//       {/* you can use js above return function and use it in the return function using {} for code */} -->
+//       you can create css in component folder, using camel case, unlike component(Capital case) 
+// flow:
+// create component using rafc 
+// the compnent will be named after the files namle
+// import the component in the app.js like below.
+// import { Header } from './components/Header';
+// import { Footer } from './components/Footer';
+// the app.js is imported as an html tag(root) in the index.html
+
+/*import React from 'react';
+import dog from '../assets/dog.webp';
+
+export const Header = () => {
+  return (
+    <div>
+      <img className="dog" src={dog} alt="" />
+    </div>
+  );
+};
+*/    
+
+
+/*
+
+import React, { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  function addThis() {
+    setCount(count + 1);
+  }
+
+  function subtractThis() {
+    setCount(count - 1);
+  }
+
+  return (
+    <div className="App">
+      <div className="Box">
+        <h1>This is app 2</h1>
+        <p>{count}</p>
+        <button onClick={addThis} className="Add">Add</button>
+        <button onClick={subtractThis} className="Subtract">Subtract</button>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+*/
+
+/*
+
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  return (
+    <div>
+      <h1>Counter</h1>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+*/
+
+/*
+
+import React, { useRef } from 'react';
+
+const Counter = () => {
+  const counterRef = useRef(0);
+
+  const increment = () => {
+    counterRef.current += 1;
+    forceUpdate();
+  };
+
+  const decrement = () => {
+    counterRef.current -= 1;
+    forceUpdate();
+  };
+
+  const forceUpdate = () => {
+    // Dummy state update to trigger re-render
+    setDummyState({});
+  };
+
+  const setDummyState = useState()[1];
+
+  return (
+    <div>
+      <h1>Counter</h1>
+      <p>Count: {counterRef.current}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+In this example:
+
+    We use the useRef hook to create a reference counterRef and initialize it with a value of 0.
+    The increment function updates the counterRef.current value by adding 1 and triggers a re-render by calling the forceUpdate function.
+    The decrement function updates the counterRef.current value by subtracting 1 and triggers a re-render.
+    The forceUpdate function is used to force a re-render by updating a dummy state variable dummyState using the useState hook.
+    The current value of the counter is accessed using counterRef.current.
+    When the buttons are clicked, the counter value is updated directly in the counterRef.current without using state.
+
+
+*/

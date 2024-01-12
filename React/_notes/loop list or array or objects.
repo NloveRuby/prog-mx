@@ -1,0 +1,140 @@
+Example 1: Using the map Method
+
+import React from 'react';
+
+function App() {
+  const data = [
+    { id: 1, name: "John" },
+    { id: 2, name: "Jane" },
+    { id: 3, name: "Doe" }
+  ];
+
+  return (
+    <div>
+      <h1>User List</h1>
+      <ul>
+        {data.map((user) => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
+
+
+Example 2: Using the forEach Method
+
+import React from 'react';
+
+function App() {
+  const data = [
+    { id: 1, name: "Apple" },
+    { id: 2, name: "Banana" },
+    { id: 3, name: "Orange" }
+  ];
+
+  const items = [];
+  data.forEach((item) => {
+    items.push(<li key={item.id}>{item.name}</li>);
+  });
+
+  return (
+    <div>
+      <h1>Fruit List</h1>
+      <ul>
+        {items}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
+
+
+Example 3: Using a for Loop
+
+import React from 'react';
+
+function App() {
+  const data = [
+    { id: 1, name: "Red" },
+    { id: 2, name: "Green" },
+    { id: 3, name: "Blue" }
+  ];
+
+  const items = [];
+  for (let i = 0; i < data.length; i++) {
+    items.push(<li key={data[i].id}>{data[i].name}</li>);
+  }
+
+  return (
+    <div>
+      <h1>Color List</h1>
+      <ul>
+        {items}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
+
+
+Example 4: Using Lodash's map Function
+
+import React from 'react';
+import _ from 'lodash';
+
+function App() {
+  const data = [
+    { id: 1, name: "Dog" },
+    { id: 2, name: "Cat" },
+    { id: 3, name: "Bird" }
+  ];
+
+  return (
+    <div>
+      <h1>Pet List</h1>
+      <ul>
+        {_.map(data, (pet) => (
+          <li key={pet.id}>{pet.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
+
+
+Example 5: Using a Custom Function
+
+import React from 'react';
+
+function App() {
+  const data = [
+    { id: 1, name: "Monday" },
+    { id: 2, name: "Tuesday" },
+    { id: 3, name: "Wednesday" }
+  ];
+
+  const renderList = (items) => {
+    return items.map((item) => <li key={item.id}>{item.name}</li>);
+  };
+
+  return (
+    <div>
+      <h1>Day List</h1>
+      <ul>
+        {renderList(data)}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
+
+
+These examples demonstrate various ways to loop through arrays of objects in React, using methods like map, forEach, for loop, Lodash's map function, and a custom rendering function.

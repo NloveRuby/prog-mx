@@ -1,0 +1,10 @@
+li{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px
+    , 1fr));
+    background-color: lightblue;
+    border: darkblue solid 1px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}

@@ -1,0 +1,6 @@
+li{
+  background-color: white;
+  list-style-type: none;
+  font-family: serif;
+  display: grid;
+}

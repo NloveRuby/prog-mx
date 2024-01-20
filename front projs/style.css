@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }
+  
+  .clock {
+    display: flex;
+  }
+  
+  .clock div {
+    margin: 5px;
+    position: relative;
+  }
+  
+  .clock span {
+    width: 100px;
+    height: 80px;
+    background: slateblue;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .clock .text {
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+  }
+  
+  .clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
+  }
+
+    /* 
+
+    .clock span: This selector targets the <span> elements that are descendants of the elements with the class .clock.
+
+    width: 100px; and height: 80px;: These properties set the width and height of the <span> elements to 100 pixels and 80 pixels, respectively.
+
+    background: slateblue;: This property sets the background color of the <span> elements to slate blue.
+
+    opacity: 80%;: This property sets the opacity of the <span> elements to 80%. It makes the elements slightly transparent.
+
+    color: white;: This property sets the text color of the <span> elements to white.
+
+    display: flex;: This property creates a flex container for the <span> elements, enabling flexbox layout properties.
+
+    flex-direction: column;: This property sets the direction of the flex items within the <span> elements to be stacked vertically.
+
+    justify-content: center;: This property aligns the flex items vertically within the <span> elements, centering them.
+
+    align-items: center;: This property aligns the flex items horizontally within the <span> elements, centering them.
+
+    font-size: 50px;: This property sets the font size of the text within the <span> elements to 50 pixels.
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);: This property adds a shadow effect to the text within the <span> elements. The shadow is positioned 2 pixels to the right and 2 pixels below the text, with a blur radius of 4 pixels. The shadow color is a slightly transparent black.
+ */

@@ -60,3 +60,4 @@ let arr1 = {
 console.log(arr1['l']); // Accessing the 'l' property of arr1
 
 console.log(arr1.l[0]); // Accessing the first element of the 'l' array
+

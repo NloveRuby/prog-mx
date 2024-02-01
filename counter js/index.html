@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter Example</title>
+  <style>
+    .counter {
+      font-size: 24px;
+      text-align: center;
+    }
+    .button {
+      margin: 10px;
+      padding: 5px 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="counter" id="counter">0</div>
+  <button class="button" onclick="increment()">Increment</button>
+  <button class="button" onclick="decrement()">Decrement</button>
+
+  <script>
+    let count = 0;
+        const counterElement = document.getElementById("counter");
+
+    function increment() {
+      count++;
+      counterElement.innerText = count;
+    }
+
+    function decrement() {
+      count--;
+      counterElement.innerText = count;
+    }
+  </script>
+</body>
+</html>
+
+<!-- In this code, we have an HTML page with a counter displayed as a <div> element with the id "counter". There are two buttons, "Increment" and "Decrement", which call the respective JavaScript functions when clicked.
+
+The JavaScript code starts by initializing a variable count to 0. The counterElement variable is used to reference the HTML element with the id "counter".
+
+The increment function is called when the "Increment" button is clicked. It increments the count variable by 1 and updates the text content of the counterElement to display the updated count.
+
+Similarly, the decrement function is called when the "Decrement" button is clicked. It decrements the count variable by 1 and updates the text content of the counterElement.
+
+By clicking the "Increment" or "Decrement" buttons, the counter value will increase or decrease accordingly. -->
